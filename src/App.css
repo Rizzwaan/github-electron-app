@@ -1,0 +1,73 @@
+body {
+	margin-top: 60px;
+	font-family: "Roboto", sans-serif;
+}
+.col,
+.row {
+	padding: 0;
+	margin: 0;
+}
+.avatar {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ddd;
+	border-radius: 20%;
+}
+.home {
+	padding: 6em;
+}
+
+.alert {
+	display: flex;
+	align-items: center;
+	border: 1px dashed rgb(122, 115, 115);
+	margin: 10px;
+}
+.ant-list-item.commit-item.active {
+	background-color: rgb(0, 89, 222);
+}
+.ant-list-item.commit-item.active * {
+	color: rgb(255, 255, 255) !important;
+}
+.ant-list-item.files-in-commit.active {
+	background-color: rgb(0, 89, 222);
+}
+.ant-list-item.files-in-commit.active * {
+	background-color: rgb(0, 89, 222);
+	color: rgb(255, 255, 255);
+}
+.dashboard {
+	margin-top: 60px;
+	position: fixed;
+	overflow-y: auto;
+	display: flex;
+}
+.navbar-top,
+.navbar-content p {
+	padding: 0;
+	margin: 0;
+}
+.navbar-top {
+	display: flex;
+	font-size: 0.6rem;
+	font-weight: lighter;
+	align-items: center;
+}
+.navbar-content {
+	display: flex;
+	font-size: 1vw;
+	margin-left: 10px;
+	margin-right: auto;
+	flex-direction: column;
+}
+.navbar-top > i {
+	font-size: 1.5rem;
+}
+
+.home-alert:hover {
+	color: blue;
+}
+
+.ant-alert-description {
+	color: black;
+}

@@ -1,0 +1,63 @@
+pre {
+	background: none !important;
+	padding: 0 !important;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word;
+	margin: 0;
+}
+
+.mmm {
+	position: fixed;
+	width: 70vw;
+	background-color: rgb(36, 41, 47);
+	color: white;
+	padding: 10px;
+	max-height: 60px;
+	min-height: 60px;
+	z-index: 1;
+	top: 0;
+}
+.added {
+	display: inline-block;
+	background-color: rgb(192, 255, 214);
+}
+
+.removed {
+	background-color: rgb(255, 218, 223);
+}
+.code-block {
+	overflow-y: scroll;
+	font-family: "Roboto";
+	overflow-x: auto;
+	word-wrap: break-word;
+	height: 100vh;
+}
+.code-block p {
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+
+	word-wrap: break-word;
+	margin: 0;
+}
+
+.code-block > div {
+	border: 1px ridge black;
+}
+.code-content {
+	padding-left: 30px;
+}
+.code-sign {
+	padding-left: 20px;
+}
+
+.code-index {
+	padding-left: 50px;
+}
+tr {
+	display: inline-block;
+	width: 99.9%;
+	clear: both;
+}

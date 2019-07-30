@@ -1,0 +1,62 @@
+{
+	"name": "git-desktop",
+	"version": "0.1.0",
+	"private": true,
+	"author": "Deepak <kapeed07@gmail.com>",
+	"homepage": "./",
+	"dependencies": {
+		"antd": "^3.20.3",
+		"electron-is-dev": "^1.1.0",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-redux": "^7.1.0",
+		"react-router-dom": "^5.0.1",
+		"react-scripts": "3.0.1",
+		"react-syntax-highlighter": "^11.0.2",
+		"redux": "^4.0.4",
+		"redux-logger": "^3.0.6",
+		"simple-git": "^1.121.0",
+		"superagent": "^5.1.0"
+	},
+	"main": "public/electron.js",
+	"description": "Git Desktop Client",
+	"scripts": {
+		"electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"pack": "electron-packager . git-desktop --platform=linux --arch=x64 --app-version=0.36.11 --asar --overwrite",
+		"pack-linux": "electron-packager . git-desktop --platform linux --arch x64 --out dist/",
+		"pack-all": "electron-packager . --all",
+		"create-installer": "electron-installer-debian --src dist/git-desktop-linux-x64/ --dest dist/installers/ --arch amd64"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"concurrently": "^4.1.1",
+		"electron": "^5.0.6",
+		"electron-builder": "^21.1.1",
+		"electron-installer-debian": "^2.0.0",
+		"electron-packager": "^14.0.2",
+		"wait-on": "^3.3.0"
+	},
+	"files": [
+		"*.js",
+		"build",
+		"node_modules"
+	]
+}

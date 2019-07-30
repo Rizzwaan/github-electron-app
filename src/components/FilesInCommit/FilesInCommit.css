@@ -1,0 +1,43 @@
+.mm {
+	position: fixed;
+	width: 15vw;
+	background-color: rgb(36, 41, 47);
+	color: white;
+	padding: 10px;
+	max-height: 60px;
+	min-height: 60px;
+
+	z-index: 1;
+	top: 0;
+}
+.ant-list.ant-list-sm.ant-list-split.ant-list-bordered {
+	border: none;
+}
+#files-in-commits {
+	width: 15vw;
+	height: 92vh;
+	overflow-y: auto;
+	font-family: "Roboto";
+
+	overflow-x: hidden;
+
+	/* top: 55px; */
+	border-right: 1px solid rgb(225, 228, 233) !important;
+	bottom: 0;
+
+	/* font-family: "Roboto";
+	width: 15vw;
+	height: 100vh;
+	border: none;
+	border-right: 1px solid #ddd; */
+}
+.files-in-commit {
+	font-family: "Roboto";
+	font-size: 0.8rem;
+	color: rgb(41, 46, 52);
+}
+
+.files-in-commit:hover {
+	cursor: pointer;
+	background-color: rgb(246, 248, 250);
+}

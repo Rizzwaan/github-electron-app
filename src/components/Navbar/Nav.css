@@ -1,0 +1,9 @@
+.m {
+	background-color: rgb(36, 41, 47);
+	color: white;
+	padding: 10px;
+	position: fixed;
+	z-index: 1;
+
+	width: 100%;
+}
